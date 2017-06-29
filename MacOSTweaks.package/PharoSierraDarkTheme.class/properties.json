@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Pharo3DarkTheme",
+	"category" : "MacOSTweaks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoSierraDarkTheme",
+	"type" : "normal"
+}
