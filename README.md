@@ -8,19 +8,17 @@ Package `MacOSTweaks` with:
 - macOs themes (Dark Sierra Theme from Ignacio Sniechowski's for Pharo 6)
 
 ```
-Gofer it
-      url: 'http://github.com/juliangrigera/PharoTweaks/';
-      package: 'MacOSTweaks';
-      load.
-MacOSTwearksScriptsRunner applySettings.
+(IceRepositoryCreator new
+	url: 'git@github.com:juliangrigera/PharoTweaks.git';
+	createRepository) updatePackage: #MacOSTweaks.
+(Smalltalk at: #MacOSTwearksScriptsRunner) perform: #applySettings.
 "Or, to set the dark theme"
-MacOSTwearksScriptsRunner applySettingsDark.
+(Smalltalk at: #MacOSTwearksScriptsRunner) perform: #applySettingsDark.
 ```
 To install only the Option/Cmd + arrows fix:
 
 ```
-Gofer it
-      url: 'http://github.com/juliangrigera/PharoTweaks/';
-      package: 'MacOSTweaks';
-      load.
+(IceRepositoryCreator new
+	url: 'git@github.com:juliangrigera/PharoTweaks.git';
+	createRepository) updatePackage: #MacOSTweaks.
 ```
