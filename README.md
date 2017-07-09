@@ -11,9 +11,9 @@ Package `MacOSTweaks` with:
 (IceRepositoryCreator new
 	url: 'git@github.com:juliangrigera/PharoTweaks.git';
 	createRepository) updatePackage: #MacOSTweaks.
-(Smalltalk at: #MacOSTwearksScriptsRunner) perform: #applySettings.
+(Smalltalk at: #MacOSTweaksScriptsRunner) perform: #applySettings.
 "Or, to set the dark theme"
-(Smalltalk at: #MacOSTwearksScriptsRunner) perform: #applySettingsDark.
+(Smalltalk at: #MacOSTweaksScriptsRunner) perform: #applySettingsDark.
 ```
 To install only the Option/Cmd + arrows fix:
 
