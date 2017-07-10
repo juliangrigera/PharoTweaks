@@ -4,4 +4,5 @@ baseline: spec
 	spec
 		for: #common
 		do: [ spec package: 'MacOSTweaks'.
-			spec group: 'default' with: #('MacOSTweaks') ]
+			spec group: 'default' with: #('MacOSTweaks').
+			self applySettings ]
