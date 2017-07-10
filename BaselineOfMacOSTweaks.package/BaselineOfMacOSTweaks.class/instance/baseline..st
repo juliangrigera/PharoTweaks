@@ -5,4 +5,4 @@ baseline: spec
 		for: #common
 		do: [ spec package: 'MacOSTweaks'.
 			spec group: 'default' with: #('MacOSTweaks').
-			self applySettings ]
+			spec postLoadDoIt: #postLoadActions ]
