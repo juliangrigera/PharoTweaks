@@ -3,22 +3,21 @@ Adjustments to the base Pharo image
 
 Package `MacOSTweaks` with:
 
-- Key bingings fix: adjusts the behavior of Option/Cmd + arrows in macOS to comply with the OS standard.
-- Command [Shift] + \` (backtick) to switch windows
-- macOs themes (Dark Sierra Theme from Ignacio Sniechowski's for Pharo 6)
+- Key bindings fix: adjusts the behavior of Option ⌥ and Cmd ⌘ + arrows in macOS to comply with the OS standards, namely:
+	- ⌥ + →: navigate to next word
+	- ⌥ + ←: navigate to beginning of word
+	- ⌘ + ← / →: home / end of line
+	- ⌘ +  ↑ / ↓: home / end of text (equivalent to Ctrl+home/end on Windows)
+- ⌘ + \` (backtick) /  ⌘ ⇧ + \` to switch windows back and forth
+- macOs themes (Dark Sierra Theme by Ignacio Sniechowski)
 
 ```
-(IceRepositoryCreator new
-	url: 'git@github.com:juliangrigera/PharoTweaks.git';
-	createRepository) updatePackage: #MacOSTweaks.
-(Smalltalk at: #MacOSTweaksScriptsRunner) perform: #applySettings.
-"Or, to set the dark theme"
-(Smalltalk at: #MacOSTweaksScriptsRunner) perform: #applySettingsDark.
+Metacello new
+	baseline: 'MacOSTweaks';
+	repository: 'github://juliangrigera/PharoTweaks';
+	load.
 ```
-To install only the Option/Cmd + arrows fix:
-
+If you prefer the Sierra _light_ theme:
 ```
-(IceRepositoryCreator new
-	url: 'git@github.com:juliangrigera/PharoTweaks.git';
-	createRepository) updatePackage: #MacOSTweaks.
+MacOSTweaksScriptsRunner setSierraLightTheme
 ```
