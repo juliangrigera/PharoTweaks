@@ -11,13 +11,13 @@ Package `MacOSTweaks` with:
 - ⌘ + \` (backtick) /  ⌘ ⇧ + \` to switch windows back and forth
 - macOs themes (Dark Sierra Theme by Ignacio Sniechowski)
 
-```
+```smalltalk
 Metacello new
 	baseline: 'MacOSTweaks';
 	repository: 'github://juliangrigera/PharoTweaks';
 	load.
 ```
 If you prefer the Sierra _light_ theme:
-```
+```smalltalk
 MacOSTweaksScriptsRunner setSierraLightTheme
 ```
