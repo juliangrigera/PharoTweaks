@@ -1,3 +1,0 @@
-accessing
-themeName
-	^ 'Sierra Light'
