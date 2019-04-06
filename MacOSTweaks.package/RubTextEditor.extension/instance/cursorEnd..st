@@ -8,7 +8,12 @@ cursorEnd: aKeyboardEvent
 	self
 		moveCursor: [ :position | position + 1 ]
 		forward: true
-		specialBlock:
-			[ :position | string indexOf: Character cr startingAt: position ifAbsent: [ string size + 1 ] ]
+		specialBlock: [ :position | 
+			aKeyboardEvent keyValue = 4
+				ifTrue: [ string size + 1 ]
+				ifFalse: [ string
+						indexOf: Character cr
+						startingAt: position
+						ifAbsent: [ string size + 1 ] ] ]
 		event: aKeyboardEvent.
 	^ true
