@@ -14,4 +14,4 @@ baseline: spec
 				package: 'MacOSTweaks';
 				package: 'MacOSTweaks-Pharo7'.
 			spec group: 'default' with: #('MacOSTweaks' 'MacOSTweaks-Pharo7').
-			spec postLoadDoIt: #postLoadActions ]
+			spec postLoadDoIt: #postLoadActionsPharo7 ]

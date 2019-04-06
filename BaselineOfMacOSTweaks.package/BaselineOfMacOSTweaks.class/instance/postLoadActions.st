@@ -1,3 +1,3 @@
 doits
 postLoadActions
-	self applySettings
+	(Smalltalk at: #MacOSTweaksScriptsRunner) perform: #applySettingsDark
