@@ -2,7 +2,7 @@ baseline
 baseline: spec
 	<baseline>
 	spec
-		for: #common
+		for: #'pharo6.x'
 		do: [ spec
 				package: 'MacOSTweaks';
 				package: 'MacOSTweaks-Pharo6'.
