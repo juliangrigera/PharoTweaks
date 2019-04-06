@@ -1,0 +1,1 @@
+I am copying Nacho's  attempt to get macOS Sierra's look in Pharo 6
