@@ -1,9 +1,9 @@
 # PharoTweaks
-Adjustments to the base Pharo image
+Adjustments to the base Pharo image. Works in Pharo 6 and Pharo 7.
 
 Package `MacOSTweaks` with:
 
-- Key bindings fix: adjusts the behavior of Option ⌥ and Cmd ⌘ + arrows in macOS to comply with the OS standards, namely:
+- Key bindings fix: corrects the behavior of Option ⌥ and Cmd ⌘ + arrows in macOS to comply with the OS standards, namely:
 	- ⌥ + →: navigate to next word
 	- ⌥ + ←: navigate to beginning of word
 	- ⌘ + ← / →: home / end of line
@@ -17,7 +17,8 @@ Metacello new
 	repository: 'github://juliangrigera/PharoTweaks';
 	load.
 ```
-If you prefer the Sierra _light_ theme:
+The theme is set according Pharo's default (P6 dark, P7 light), but can be set with:
 ```smalltalk
 MacOSTweaksScriptsRunner setSierraLightTheme
+MacOSTweaksScriptsRunner setSierraDarkTheme
 ```
