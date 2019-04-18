@@ -19,6 +19,6 @@ Metacello new
 ```
 The theme is set according Pharo's default (P6 dark, P7 light), but can be set with:
 ```smalltalk
-MacOSTweaksScriptsRunner setSierraLightTheme
-MacOSTweaksScriptsRunner setSierraDarkTheme
+MacOSTweaksScriptsRunner new setSierraLightTheme
+MacOSTweaksScriptsRunner new setSierraDarkTheme
 ```
