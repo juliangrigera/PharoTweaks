@@ -1,5 +1,5 @@
 # PharoTweaks
-Adjustments to the base Pharo image. Works in Pharo 6 7 and 8.
+Adjustments to the base Pharo image. Works in Pharo 6, 7 and 8.
 
 Package `MacOSTweaks` with:
 
