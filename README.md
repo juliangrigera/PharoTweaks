@@ -1,11 +1,12 @@
 # PharoTweaks
-Adjustments to the base Pharo image. Works in Pharo 6, 7 and 8.
+Adjustments to the base Pharo image. Works in Pharo 6, 7, 8 and 10 (9 incoming:)).
 
 Package `MacOSTweaks` with:
 
 - Key bindings fix: corrects the behavior of Option ⌥ and Cmd ⌘ + arrows in macOS to comply with the OS standards:
 	- ⌥ + →: navigate to next word
 	- ⌥ + ←: navigate to beginning of word
+	- ⌥ + backspace: delete previous word	
 	- ⌘ + ← / →: home / end of line
 	- ⌘ +  ↑ / ↓: home / end of text (equivalent to Ctrl+home/end on Windows)
 - ⌘ + \` (backtick) /  ⌘ ⇧ + \` to switch windows back and forth
