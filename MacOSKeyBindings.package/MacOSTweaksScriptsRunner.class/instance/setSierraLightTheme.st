@@ -1,0 +1,3 @@
+theme
+setSierraLightTheme
+	PharoSierraLightTheme beCurrent

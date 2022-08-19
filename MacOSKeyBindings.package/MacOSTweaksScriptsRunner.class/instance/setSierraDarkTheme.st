@@ -1,0 +1,3 @@
+theme
+setSierraDarkTheme
+	PharoSierraDarkTheme beCurrent

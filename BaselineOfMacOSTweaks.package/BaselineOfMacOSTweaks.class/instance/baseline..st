@@ -21,4 +21,11 @@ baseline: spec
 				package: 'MacOSTweaks';
 				package: 'MacOSTweaks-Pharo7'.
 			spec group: 'default' with: #('MacOSTweaks' 'MacOSTweaks-Pharo7').
-			spec postLoadDoIt: #postLoadActionsPharo8 ]
+			spec postLoadDoIt: #postLoadActionsPharo8 ].
+	spec
+		for: #'pharo10.x'
+		do: [ spec
+				package: 'MacOSKeyBindings';
+				package: 'MacOSTweaks-Pharo10'.
+			spec group: 'default' with: #('MacOSKeyBindings' 'MacOSTweaks-Pharo10').
+			spec postLoadDoIt: #postLoadActionsPharo10 ]

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JulianGrigera 4/28/2017 11:05",
+	"super" : "PharoLightTheme",
+	"category" : "MacOSTweaks-Pharo10",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoSierraLightTheme",
+	"type" : "normal"
+}
