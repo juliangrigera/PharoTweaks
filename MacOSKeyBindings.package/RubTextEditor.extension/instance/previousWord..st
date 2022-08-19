@@ -11,7 +11,11 @@ previousWord: position
 		                 ifAbsent: [ 1 ].
 	initialIsAlphaNumeric ifFalse: [ 
 		[ index := index - 1 ] doWhileTrue: [ 
-			index > lineBeginning and: [ (self isWordCharacterAt: index in: string) not ] ] ].
+			index > lineBeginning and: [ 
+				(self isWordCharacterAt: index in: string) not ] ] ].
 	[ index := index - 1 ] doWhileTrue: [ 
-		index > lineBeginning and: [ self isWordCharacterAt: index in: string ] ].
-	^ index + 1
+		index > lineBeginning and: [ 
+			self isWordCharacterAt: index in: string ] ].
+	^ index = 1
+		  ifTrue: [ 1 ]
+		  ifFalse: [ index + 1 ]
