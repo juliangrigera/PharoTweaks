@@ -1,0 +1,4 @@
+*MacOSKeyBindings
+defaultWordNavigationKeyPressed
+
+	^ self controlKeyPressed

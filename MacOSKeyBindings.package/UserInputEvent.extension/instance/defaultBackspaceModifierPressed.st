@@ -1,0 +1,4 @@
+*MacOSKeyBindings
+defaultBackspaceModifierPressed
+
+	^ self controlKeyPressed

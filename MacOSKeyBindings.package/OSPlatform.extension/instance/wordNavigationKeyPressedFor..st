@@ -1,0 +1,4 @@
+*MacOSKeyBindings
+wordNavigationKeyPressedFor: aKeyboardEvent
+
+	^ aKeyboardEvent defaultWordNavigationKeyPressed

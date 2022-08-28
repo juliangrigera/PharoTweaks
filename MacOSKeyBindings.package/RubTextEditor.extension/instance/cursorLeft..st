@@ -14,7 +14,7 @@ cursorLeft: aKeyboardEvent
 			| newPosition |
 			aKeyboardEvent commandKeyPressed ifTrue: [ 
 				newPosition := self beginningOfLine: position ].
-			aKeyboardEvent altKeyPressed ifTrue: [ 
+			aKeyboardEvent wordNavigationKeyPressed ifTrue: [ 
 				newPosition := self previousWord: position ].
 			newPosition ]
 		event: aKeyboardEvent.

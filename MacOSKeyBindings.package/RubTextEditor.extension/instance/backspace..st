@@ -3,12 +3,11 @@ backspace: aKeyboardEvent
 
 	| result startIndex |
 	self closeTypeIn.
-	result := (aKeyboardEvent optionKeyPressed or: [ 
-		           aKeyboardEvent commandKeyPressed ])
+	result := aKeyboardEvent backspaceModifierPressed
 		          ifTrue: [ 
-			          aKeyboardEvent optionKeyPressed
-				          ifTrue: [ self backWord: aKeyboardEvent keyCharacter ]
-				          ifFalse: [ self backLine: aKeyboardEvent keyCharacter ] ]
+			          aKeyboardEvent commandKeyPressed
+				          ifTrue: [ self backLine: aKeyboardEvent keyCharacter ]
+				          ifFalse: [ self backWord: aKeyboardEvent keyCharacter ] ]
 		          ifFalse: [ 
 			          self hasSelection
 				          ifTrue: [ 

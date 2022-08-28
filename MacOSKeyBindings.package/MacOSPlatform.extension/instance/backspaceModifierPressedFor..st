@@ -1,0 +1,4 @@
+*MacOSKeyBindings
+backspaceModifierPressedFor: aKeyboardEvent
+
+	^ aKeyboardEvent macOSBackspaceModifierPressed
