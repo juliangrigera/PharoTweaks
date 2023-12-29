@@ -1,5 +1,5 @@
 # PharoTweaks
-Adjustments to the base Pharo image for macOS. Works in Pharo 6 - 10.
+Adjustments to the base Pharo image for macOS. Works in Pharo 6 - 11.
 
 Features:
 
@@ -23,7 +23,7 @@ Metacello new
 	repository: 'github://juliangrigera/PharoTweaks';
 	load.
 ```
-The theme is set according Pharo's default (P6 dark, P7 light, P8 dark, etc), but can be set with:
+The theme is set according Pharo's default (P7 light, P8 dark, etc), but can be set manually with:
 ```smalltalk
 MacOSTweaksScriptsRunner new setSierraLightTheme
 MacOSTweaksScriptsRunner new setSierraDarkTheme
